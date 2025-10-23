@@ -16,7 +16,7 @@ function NewTaskPage() {
 
     try {
       // Reemplaza la URL con el endpoint POST de tu API
-      const response = await fetch('http://localhost:8080/api/Task/createTask', {
+      const response = await fetch('https://tinytask-16id.onrender.com/api/Task/createTask', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

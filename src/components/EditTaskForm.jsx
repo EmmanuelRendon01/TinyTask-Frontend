@@ -33,7 +33,7 @@ function EditTaskForm({ taskToEdit, onClose, onTaskUpdated }) {
     };
 
     try {
-      const response = await fetch(`http://localhost:8080/api/Task/update/${taskToEdit.id}`, {
+      const response = await fetch(`https://tinytask-16id.onrender.com/api/Task/update/${taskToEdit.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedTask),

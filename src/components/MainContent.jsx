@@ -19,7 +19,7 @@ function MainContent() {
     // ... (la función fetchTasks se queda exactamente igual que antes)
     const fetchTasks = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/Task/getTasks');
+        const response = await fetch('https://tinytask-16id.onrender.com/api/Task/getTasks');
         if (!response.ok) {
           throw new Error('No se pudo obtener la respuesta de la red');
         }
@@ -55,7 +55,7 @@ function MainContent() {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/Task/delete/${taskId}`, {
+      const response = await fetch(`https://tinytask-16id.onrender.com/api/Task/delete/${taskId}`, {
         method: 'DELETE',
       });
 
